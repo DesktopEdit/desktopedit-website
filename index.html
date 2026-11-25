@@ -3,13 +3,12 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="DesktopEdit is a keyboard-friendly Windows editor for huge text files, logs, CSVs and more. Download the portable app from EmuKey LLC.">
+    <meta name="description" content="DesktopEdit is a portable Windows text editor based on Notepad++, with tabbed editing, syntax highlighting, and customizable shortcuts.">
     <meta name="theme-color" content="#11110f">
-    <title>DesktopEdit | Large Text File Editor for Windows</title>
+    <title>DesktopEdit | Text Editor for Windows</title>
     <link rel="icon" href="assets/DesktopEdit.ico" sizes="any">
     <link rel="apple-touch-icon" href="assets/DesktopEdit-500.png">
     <link rel="stylesheet" href="styles.css">
-    <script src="preview.js" defer></script>
 </head>
 <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -31,25 +30,19 @@
         <section class="hero shell" aria-labelledby="hero-title">
             <div class="hero-copy">
                 <p class="platform">Windows text editor</p>
-                <h1 id="hero-title">Big files.<br><span>Familiar keys.</span></h1>
-                <p class="intro">Open large logs, CSV exports and text files without loading the whole file into memory. Search, edit and move around with shortcuts that feel familiar.</p>
-                <a class="button" href="downloads/DesktopEdit.exe" download>Download for Windows <span aria-hidden="true">↓</span></a>
-                <p class="download-note">Windows x64 · Portable EXE · 25.3 MiB</p>
+                <h1 id="hero-title">DesktopEdit</h1>
+                <p class="intro">A Windows text editor from EmuKey LLC, based on Notepad++. Edit in tabs, search across files, and customize your shortcuts.</p>
+                <a class="button" href="downloads/DesktopEdit-build-25-x64.zip" download>Download for Windows <span aria-hidden="true">↓</span></a>
+                <p class="download-note">Windows x64 · Portable ZIP · 5.6 MiB</p>
             </div>
 
             <figure class="editor" aria-labelledby="preview-title">
                 <div class="editor-title">
                     <img src="assets/DesktopEdit-500.png" width="20" height="20" alt="">
-                    <span id="preview-title">Log filtering preview</span>
+                    <span id="preview-title">Text editing preview</span>
                     <span class="preview-caption">Sample data</span>
                 </div>
                 <div class="editor-tab"><span class="tab-status" aria-hidden="true"></span> server.log</div>
-                <div class="log-filters" role="group" aria-label="Filter the sample log" hidden>
-                    <span class="filter-label" aria-hidden="true">Level</span>
-                    <button type="button" data-filter="all" aria-pressed="true">All</button>
-                    <button type="button" data-filter="WARN" aria-pressed="false">Warn</button>
-                    <button type="button" data-filter="ERROR" aria-pressed="false">Error</button>
-                </div>
                 <div class="log" aria-label="Sample log entries" role="region" tabindex="0">
                     <div class="log-row" data-level="INFO"><span class="line-no" aria-hidden="true">1</span><time>08:42:01</time><span class="level">INFO</span><span>HTTP server started</span></div>
                     <div class="log-row" data-level="INFO"><span class="line-no" aria-hidden="true">2</span><time>08:42:03</time><span class="level">INFO</span><span>GET /health 200</span></div>
@@ -64,26 +57,26 @@
         </section>
 
         <section class="features shell" id="features" aria-labelledby="features-title">
-            <h2 id="features-title">Tools for large files</h2>
+            <h2 id="features-title">Editing features</h2>
             <div class="feature-grid">
-                <article><h3>Open gigabyte-scale files</h3><p>Start reading while DesktopEdit builds its line index in the background. Jump to a line or byte offset as the file opens.</p></article>
-                <article><h3>Find, filter and replace</h3><p>Search with plain text or regular expressions. Filter to matching lines, keep surrounding context or export the results.</p></article>
-                <article><h3>Follow live logs</h3><p>Watch new entries arrive, jump to a timestamp and set an alert for patterns such as <code>ERROR</code> or <code>FATAL</code>.</p></article>
-                <article><h3>Work with structured data</h3><p>Read CSV and TSV as tables, inspect JSON structure and open files inside ZIP and TAR archives.</p></article>
-                <article><h3>Edit and save safely</h3><p>Use undo, column selection and multiple cursors. Saves replace the original file after the new version is written.</p></article>
-                <article><h3>Compare and inspect</h3><p>Compare large files side by side or switch to hex view to see the raw bytes.</p></article>
+                <article><h3>Tabbed editing</h3><p>Open multiple documents and arrange two editor views side by side.</p></article>
+                <article><h3>Find and replace</h3><p>Search open documents or entire folders with plain text or regular expressions.</p></article>
+                <article><h3>Syntax highlighting</h3><p>Read code with language-specific coloring, folding, and function navigation.</p></article>
+                <article><h3>Column editing</h3><p>Select rectangular blocks or place multiple cursors to edit several lines at once.</p></article>
+                <article><h3>Line numbers</h3><p>Show or hide the line-number column with one toolbar button.</p></article>
+                <article><h3>Light and dark themes</h3><p>Switch the editor and application colors with the half-circle button next to Minimize.</p></article>
             </div>
         </section>
 
         <section class="shortcuts shell" id="shortcuts" aria-labelledby="shortcuts-title">
             <div>
-                <h2 id="shortcuts-title">Keep your muscle memory</h2>
-                <p>DesktopEdit takes its shortcut cues from UltraEdit. Change the bindings in <strong>Help → Keyboard shortcuts</strong>.</p>
+                <h2 id="shortcuts-title">Keyboard shortcuts</h2>
+                <p>Change key bindings in <strong>Settings → Shortcut Mapper</strong>.</p>
             </div>
             <dl class="key-list">
-                <div><dt>Open a file</dt><dd><kbd>Alt+F</kbd><span>then</span><kbd>O</kbd></dd></div>
-                <div><dt>Close the active tab</dt><dd><kbd>Alt+F</kbd><span>then</span><kbd>C</kbd></dd></div>
-                <div><dt>Open Find</dt><dd><kbd>Alt+F3</kbd></dd></div>
+                <div><dt>Open a file</dt><dd><kbd>Ctrl+O</kbd></dd></div>
+                <div><dt>Close the active tab</dt><dd><kbd>Ctrl+W</kbd></dd></div>
+                <div><dt>Open Find</dt><dd><kbd>Ctrl+F</kbd></dd></div>
                 <div><dt>Go to line</dt><dd><kbd>Ctrl+G</kbd></dd></div>
             </dl>
         </section>
@@ -93,15 +86,16 @@
                 <img src="assets/DesktopEdit-500.png" width="80" height="80" alt="" loading="lazy">
                 <div>
                     <h2 id="download-title">Get DesktopEdit</h2>
-                    <p>2026.11.24 (build 24) · Windows x64 · 26,536,448 bytes</p>
-                    <p>Save and run <code>DesktopEdit.exe</code> to get started.</p>
-                    <p>Build 24 fixes the toolbar Help and Find controls and adds Select Range and Always on Top.</p>
+                    <p>2026.11.25 (build 25) · Windows x64 · 8,683,520 bytes (EXE)</p>
+                    <p>Extract the ZIP and run <code>DesktopEdit.exe</code> from the extracted folder.</p>
+                    <p>Build 25 introduces the Notepad++ base, a line-number toolbar toggle, and a light/dark button in the title bar.</p>
+                    <p><a href="downloads/DesktopEdit.exe" download>Download EXE only</a> if you already have the runtime files. <a href="downloads/DesktopEdit-build-25-source.zip" download>Download build 25 source (GPLv3)</a>.</p>
                 </div>
-                <a class="button" href="downloads/DesktopEdit.exe" download>Download EXE <span aria-hidden="true">↓</span></a>
+                <a class="button" href="downloads/DesktopEdit-build-25-x64.zip" download>Download ZIP <span aria-hidden="true">↓</span></a>
             </div>
             <details>
-                <summary>SHA-256 checksum</summary>
-                <code>4c24213aefd73a5b3306dbbedc233a260914f09db8ed733c27d64180ca5a1fc7</code>
+                <summary>SHA-256 checksum for DesktopEdit.exe</summary>
+                <code>481fabee0ea206a0efc27dd2b33c397a58bd802dd614ec0c83c36cc99bf3deb8</code>
             </details>
         </section>
     </main>
@@ -109,7 +103,7 @@
     <footer class="site-footer">
         <div class="shell footer-inner">
             <p>DesktopEdit by <a href="https://emukey.com/">EmuKey LLC</a></p>
-            <p><a href="licenses/BigText-MIT.txt">Third-party licenses</a></p>
+            <p>Based on <a href="https://notepad-plus-plus.org/">Notepad++</a> by Don Ho and contributors. <a href="licenses/GPL-3.0.txt">GNU GPL v3</a></p>
         </div>
     </footer>
 </body>

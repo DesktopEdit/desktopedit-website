@@ -171,6 +171,7 @@ h2 { font-size: clamp(1.9rem, 4vw, 2.7rem); line-height: 1.12; letter-spacing: -
     background: var(--border);
 }
 .feature-grid article { background: var(--surface); padding: clamp(20px, 3vw, 32px); }
+.feature-grid article:last-child { grid-column: 1 / -1; }
 .feature-grid h3 { font-size: 1.08rem; margin-bottom: 8px; }
 .feature-grid p, .shortcuts p, .release p { color: var(--muted); }
 code { font-family: var(--mono); font-size: .92em; }

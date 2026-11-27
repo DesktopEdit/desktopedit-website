@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="DesktopEdit is a portable Windows text editor with workspace search, split panes, column editing, advanced sorting, bookmarks, and macros.">
+    <meta name="description" content="DesktopEdit is a portable Windows text editor with workspace search and replace, session recovery, column editing, and tools for JSON, XML, CSV, and binary files.">
     <meta name="theme-color" content="#11110f">
     <title>DesktopEdit | Text Editor for Windows</title>
     <link rel="icon" href="assets/DesktopEdit.ico" sizes="any">
@@ -31,9 +31,9 @@
             <div class="hero-copy">
                 <p class="platform">Windows text editor</p>
                 <h1 id="hero-title">DesktopEdit</h1>
-                <p class="intro">A new Windows text editor from EmuKey LLC. Work across files with split views, workspace search, and tools for editing code, logs, and tabular text.</p>
+                <p class="intro">A portable Windows text editor for code, logs, and data. Search and edit across files, inspect structured data, and resume your workspace with unsaved edits intact.</p>
                 <a class="button" href="downloads/DesktopEdit.exe?v=23" download>Download for Windows</a>
-                <p class="download-note">Windows x64 · Portable EXE · 13.1 MiB</p>
+                <p class="download-note">Windows x64 · Portable EXE · 13.2 MiB</p>
             </div>
 
             <figure class="editor" aria-labelledby="preview-title">
@@ -66,16 +66,19 @@
         <section class="features shell" id="features" aria-labelledby="features-title">
             <h2 id="features-title">Editing features</h2>
             <div class="feature-grid">
-                <article><h3>Tabs, split views, and Explorer</h3><p>Arrange tabs in multiple rows, sort them by name, extension, or path, and edit in side-by-side or stacked panes. Toggle Explorer from the far-left toolbar button.</p></article>
-                <article><h3>Search across a workspace</h3><p>Find text or regular expressions across a folder, jump to matches, and filter matching lines into a new tab. Preview replacement diffs and approve each file you want to update.</p></article>
-                <article><h3>Bookmarks for search results</h3><p>Bookmark matching lines, then copy, cut, or delete the marked lines together. Clear search bookmarks while keeping the ones you placed manually.</p></article>
-                <article><h3>Column and multi-caret editing</h3><p>Select rectangular blocks, edit with multiple carets, or switch to overstrike. Set a column ruler and tab width, and convert tabs and spaces.</p></article>
-                <article><h3>Advanced line sorting</h3><p>Sort all or selected lines by up to four character ranges or tab-delimited fields. Use numeric ordering, ignore case, and remove rows whose keys all match.</p></article>
-                <article><h3>Code and text navigation</h3><p>Use syntax highlighting, code folding, bracket matching, and Go to Symbol. Toggle line numbers and word wrap from the toolbar, count words and lines, or insert another text file at the caret.</p></article>
-                <article><h3>Macros and shortcuts</h3><p>Record, name, replay, and repeat edits. Find commands in the Command Palette and customize keyboard shortcuts.</p></article>
-                <article><h3>Compare files and inspect bytes</h3><p>Review a two-file text diff or inspect files in the paged hex view, jump to a byte offset, and overwrite bytes. Standard text editing supports UTF-8 files up to 16 MiB.</p></article>
-                <article><h3>Text encodings</h3><p>Edit UTF-8 and BOM-marked UTF-16 or UTF-32 files, reopen legacy files as Windows-1252, and choose an encoding for the next save.</p></article>
-                <article><h3>Themes and session restore</h3><p>Use the half-black, half-white circle next to Minimize to cycle through Dark, Light, and High Contrast. Pick an accent color, restore your workspace session, and register Windows file associations.</p></article>
+                <article><h3>Search and replace across files</h3><p>Search folders, open tabs, or selected text using plain text or regular expressions. Preview replacement diffs and approve which files to update.</p></article>
+                <article><h3>Workspace and draft recovery</h3><p>Reopen DesktopEdit to resume your tabs, untitled notes, unsaved edits, and caret positions. Recovery checkpoints help restore recent work after a crash.</p></article>
+                <article><h3>Tabs, split views, and Explorer</h3><p>Browse project files in Explorer, sort tabs by name, extension, or path, and edit in side-by-side or stacked panes.</p></article>
+                <article><h3>JSON and XML tools</h3><p>Inspect and edit JSON in a tree, jump to values with JSON Pointer, and format or minify the document. Inspect XML elements, evaluate XPath queries, and format XML.</p></article>
+                <article><h3>CSV and fixed-width data</h3><p>Preview and edit delimited data in a table. Sort records, change field separators, or convert between delimited and fixed-width text.</p></article>
+                <article><h3>Column and multi-caret editing</h3><p>Edit rectangular selections or type at multiple carets. Paste as a column, insert numbered sequences, and set column rulers.</p></article>
+                <article><h3>Compare files and inspect bytes</h3><p>Review text diffs in unified or side-by-side views, compare files byte for byte, or find and replace byte sequences in the hex view.</p></article>
+                <article><h3>Text encodings</h3><p>Open and save Unicode and legacy encodings, including Windows-1252, ISO-8859-1, DOS (IBM 437), and EBCDIC (IBM 037).</p></article>
+                <article><h3>Macros and smart templates</h3><p>Record, replay, import, and export editing macros. Reuse snippets with prompted fields and values drawn from the current file, date, or selection.</p></article>
+                <article><h3>Advanced line sorting</h3><p>Sort selected lines or the whole document by up to four character ranges or tab-delimited fields. Use numeric ordering, ignore case, and remove rows whose keys match.</p></article>
+                <article><h3>Code and text navigation</h3><p>Use syntax highlighting, folding, bracket matching, and Go to Symbol. Bookmark matching lines and jump to bookmarks across open tabs.</p></article>
+                <article><h3>Change tracking and live logs</h3><p>See which lines have changed, jump between unsaved changes, and revert an individual change. Follow a saved log as another program appends to it.</p></article>
+                <article><h3>Shortcuts, themes, and file associations</h3><p>Find commands in the Command Palette and customize keyboard shortcuts. Choose Dark, Light, or High Contrast, and register DesktopEdit for your preferred file extensions.</p></article>
             </div>
         </section>
 
